@@ -1,0 +1,339 @@
+/*unviverasl style*/
+html, body{
+    font-size: 16px;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+h2{
+    font-family: "Caudex", serif;
+    font-size: 2.25rem;
+}
+
+p{
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/*navigation section*/
+nav{
+    display: flex;
+    font-family: 'Montserrat';
+    padding: .625rem;
+    background-color: #ddd0c8;
+    margin: 0;
+}
+
+.logo{
+    font-family: "Caudex", serif;
+    font-size: 1.25rem;
+    flex: 1;
+    font-weight: bold;
+    padding-left: 1.875rem;
+    padding-top: .875rem;
+    text-transform: uppercase;
+}
+
+.nav-items{
+    padding-right: 1.875rem;
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    list-style: none;
+    padding-right: 4rem;
+}
+
+li a:hover{
+    cursor: pointer;
+    list-style: none;
+    border-bottom: 1px solid black;
+}
+
+.mobile{
+    display: none;
+}
+
+@media only screen and (max-width:768px){
+    .nav-items{
+        display: none;
+    }
+
+    .nav{
+        padding-top: 0;
+        align-items: flex-start;
+    }
+
+    .logo{
+        padding-top: 0;
+        padding-left: 1rem;
+    }
+    .mobile{
+        display: inline;
+        padding-right: 2rem;
+    }
+
+    .mobile img{
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+/*header section*/
+.header-section{
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #ddd0c8;
+}
+
+.top{
+    max-width: 100%;
+    min-height: 21.875rem;
+    padding: 2.3125rem 0 2rem 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.top-content{
+    max-width: 45rem;
+}
+
+.top span{
+    font-weight: light;
+    font-size: 1.25rem;
+}
+
+.top h1{
+    font-family: "Caudex", serif;
+    font-size: 3.125rem;
+    font-weight: bold;
+    line-height: 1.4;
+    margin-bottom: 2.875rem;
+}
+
+.button a{
+    border-radius: 25px;
+    background-color: #323232;
+    padding: 1rem 1.875rem;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: .875rem;
+    cursor: pointer;
+} 
+
+.button a:hover{
+    background-color: rgb(32, 26, 26);
+}
+
+.background{
+    width: 100%;
+    background-image: url(../images/background.jpg);
+    height: 40.625rem;
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width:768px){
+    .header-section{
+        justify-content: center;
+    }
+
+    .top{
+        padding: 0;
+        width: 80%;
+        align-items: center;
+    }
+
+    .top h1{
+        font-size: 2.1875rem;
+    } 
+
+    .background{
+        height: 21.875rem;
+    }
+}
+
+/*gallery section*/
+#gallery{
+    padding: 0 5%;
+    max-width: 1000px;
+    margin: 4.375rem auto;
+}
+#gallery .content{
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.gallery{
+    margin-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: space-between;
+    row-gap: 10px;
+}
+
+.project{
+    width: 49%;
+    height: 300px;
+}
+
+.first{
+    background-image: url(../images/Classic-House-Interior-Design.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.second{
+    background-image: url(../images/Classic-House-Interior-Design2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.third{
+    background-image: url(../images/Classic-House-Interior-Design3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.fourth{
+    background-image: url(../images/Classic-House-Interior-Design4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width:768px){
+    .content{
+        width: 400px;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .gallery{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .project{
+        width: 400px;
+        height: 300px;
+    }
+
+    .content h2{
+        font-size: 1.875rem;
+    }
+}
+
+/*team member section*/
+#team h2, #team h3, #team span, #team p{
+    margin: 0;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: "Caudex", serif;
+}
+
+#team span {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+#team .content{
+    text-align: center;
+    padding: 3.125rem 0;
+}
+
+.team{
+    display: flex;
+    gap: 5px;
+    max-width: 100%;
+    padding-bottom: .625rem;
+}
+
+.staff{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.description{
+    padding: 20px;
+    background-color: rgba(50, 50, 50, 0.8);
+    width: 100%;
+    color: white;
+}
+
+.ceo{
+    background-image: url(../images/staffs/team-founder.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+.decorator{
+    background-image: url(../images/staffs/Interior\ Decorator.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+.interior{
+    background-image: url(../images/staffs/Interior\ Decorator\ \(2\).jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+.photo{
+    background-image: url(../images/staffs/team-photographer.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+.dev{
+    background-image: url(../images/staffs/web\ developer.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+@media only screen and (max-width:768px){
+    .team{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+/*footer*/
+footer{
+    margin-top: 1.25rem;
+    background-color: black;
+    padding: 1.25rem;
+
+    color: white;
+}
+
+footer .content{
+    display: flex;
+    gap: 10px;
+}
+.copyright{
+    flex: 1;
+}
