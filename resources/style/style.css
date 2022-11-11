@@ -216,8 +216,8 @@ li a:hover{
 }
 
 @media only screen and (max-width:768px){
-    .content{
-        width: 400px;
+    #gallery .content{
+        width: 300px;
         justify-content: center;
         flex-direction: column;
         margin: 0 auto;
